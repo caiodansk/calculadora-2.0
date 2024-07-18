@@ -1,0 +1,202 @@
+
+
+@keyframes descer {
+    0% {
+        position: relative;
+        top: -100%;
+    }
+    
+    100% {
+         position: relative;
+         top: 0%;
+    }
+}
+
+
+
+
+
+
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(224, 200, 204);
+    margin: 0;
+}
+
+#imprimir::placeholder {
+    text-align: center;
+    
+    
+}
+
+#imprimir:focus {
+    outline: none;
+}
+
+.container {
+    border: 2px solid #ff4fca;
+    border-radius: 10px;
+    padding: 20px;
+    width: 320px;
+    background-color: #FFC0CB; 
+    box-shadow: 0 4px 8px rgba(247, 5, 5, 0.6); 
+    cursor: url(paw2.png), auto;
+    animation: descer 2s ease ;
+    
+    
+}
+
+.text input {
+    width: 100%;
+    height: 40px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 2px solid #FF69B4; /* Cor de borda mais suave */
+    border-radius: 5px;
+    text-align: right;
+    box-sizing: border-box; /* Para garantir que o padding não afete a largura total */
+    cursor: url(paw2.png), auto;
+}
+
+.img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.img img {
+    width: 200px; /* Ajustei o tamanho da imagem */
+}
+
+button {
+    color: #e40a8c;
+    padding: 10px;
+    margin: 5px;
+    font-size: 22px;
+    border: 2px solid #d6213b;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 22%; /* Ajuste para garantir que os botões cabem na linha */
+    background-color: #f7d2e2;
+    cursor: url(paw2.png), auto;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #FFA500;
+}
+
+button#calcular,
+button#delet { 
+    color: rgb(236, 11, 142);
+}
+
+button#calcular:hover,
+button#delet:hover { 
+    background-color: #FFA500;
+}
+
+.lineone,
+.linetwo,
+.linethree,
+.linefour { 
+    display: flex;
+    justify-content: space-between;
+}
+
+#bMode {
+    position: absolute;
+    top: 5%;
+    width: 180px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#dark {
+    background-color: #585757;
+    cursor: url(batluva.png), auto;
+}
+
+#dark #bMode {
+    border: 2px solid #ad9a2f;
+    color: white;
+    background-color: #282e3c;
+    cursor: url(batluva.png), auto;
+}
+
+#dark #bMode:hover {
+    background-color: gray;
+}
+
+@keyframes descer2 {
+    from {
+        position: relative;
+        top: -100%;
+    }
+    to {
+        position: relative;
+        top: 0%;
+    }
+}
+
+
+#dark .container {
+    border: 2px solid #ad9a2f;
+    background-color: black;
+    box-shadow: 0px 0px 10px black;
+    animation: descer2 2s ease;
+    cursor: url(batluva.png), auto;
+    
+}
+
+#dark #imprimir {
+    border: 2px solid #282e3c;
+    outline: 2px solid #ad9a2f;
+    cursor: url(batluva.png), auto;
+}
+
+#dark #imprimir::placeholder {
+    color: #282e3c;
+    cursor: url(batluva.png), auto;
+}
+
+
+
+#dark .num {
+    color: white;
+    border: 2px solid #ad9a2f;
+    background-color: #282e3c;
+    cursor: url(batluva.png), auto;
+}
+
+#dark .num:hover {
+    background-color: gray;
+}
+
+#dark #calcular, #dark #delet {
+    border: 2px solid #ad9a2f;
+    color: white;
+    background-color: #505c7c;
+    cursor: url(batluva.png), auto;
+}
+
+#dark #calcular:hover, #dark #delet:hover {
+    background-color: rgb(61, 56, 74);
+}
+
+#dark #logo {
+    width: 240px;
+    cursor: url(batluva.png), auto;
+}
+
